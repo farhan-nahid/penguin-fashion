@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- css & favicon link part start -->
+    <!-- css ,google fonts & favicon link part start -->
 
+    <!-- font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- bootstarp css -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- fotawesome css -->
@@ -12,74 +17,78 @@
     <!-- main css -->
     <link rel="stylesheet" href="style.css" />
     <!-- favicon part -->
-    <link rel="icon" href="img/favicon.png" type="image/gif"">
+    <link rel="icon" href="img/favicon.png" type="image/gif" />
 
-    <!-- css & favicon link part end -->
+    <!-- css ,google font & favicon link part end -->
 
-    <title>Document</title>
+    <title>Penguin Fashon</title>
   </head>
   <body>
     <!-- navbar part start -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-          <!-- navbar icon -->
-
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
-          <!-- navbar icon  -->
-
+          <!-- logo part -->
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo.png" alt="logo"
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- nav-item part -->
 
-          <!-- nav items start-->
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto mb-2">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link text-dark pe-4" href="#">Home</a>
+                <a class="nav-link text-white px-3" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark pe-4" href="#">Product</a>
+                <a class="nav-link text-white px-3" href="#woman-jacket"
+                  >Products</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark pe-4" href="#">About Us</a>
+                <a class="nav-link text-white px-3" href="#about-us"
+                  >About Us</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-dark pe-4" href="#">Contact Us</a>
+                <a class="nav-link text-white px-3" href="#contact-us"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
-
-          <!-- nav items end-->
         </div>
       </nav>
     </header>
     <!-- navbar part end -->
     <!-- website main part start -->
-    <main class="container">
+    <main class="container mt-5">
       <!-- dashboard part start -->
       <section id="dashboard">
         <div class="row">
           <!-- dashboard content start -->
-          <div class="col-md-6 dashboard-content">
-            <h1>
-              <span>BE THE PENGUIES</span> <br />
+          <div class="col-md-6 mt-5 dashboard-content">
+            <h1 class="mt-5">
+              <span>BE THE PENGUIEN</span> <br />
               OF WINTER
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
               sapiente iusto rerum!
             </p>
-            <button class="btn">BUY NOW</button>
+            <button class="btn btn-color px-4 py-3 m-3 text-white">
+              <i class="fas fa-shopping-cart"></i> BUY NOW
+            </button>
           </div>
           <!-- dashboard content end -->
 
@@ -91,6 +100,255 @@
         </div>
       </section>
       <!-- dashboard part end -->
+
+      <!-- womans jacket card part start -->
+      <section id="woman-jacket" class="my-5">
+        <!-- content start -->
+        <h2 class="mb-5">WOMAN JACKET</h2>
+        <!-- content end -->
+        <!--  card start -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 h-80 rounded">
+          <!-- single card start -->
+          <div class="col-md-6 col-lg-4 shadow-lg">
+            <div class="card card-margin">
+              <!-- single card image start -->
+              <img src="img/women1.png" class="card-img-top" alt="wj1" />
+              <!-- single card image end -->
+              <!-- single card content start -->
+              <div class="card-body">
+                <h5 class="card-title">Yellow Coat Jacket</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  nostrum quod fugiat.
+                </p>
+              </div>
+              <!-- single card content end -->
+              <!-- single card footer start -->
+              <div class="card-footer d-flex justify-content-between footer-bg">
+                <h2 class="mt-4 ms-4"><span>$234</span></h2>
+                <button class="btn btn-color px-4 py-3 m-3 text-white">
+                  <i class="fas fa-shopping-cart"></i> BUY NOW
+                </button>
+              </div>
+              <!-- single card footer end -->
+            </div>
+          </div>
+          <!-- single card end -->
+
+          <!-- single card start -->
+          <div class="col-md-6 col-lg-4 shadow-lg">
+            <div class="card card-margin">
+              <!-- single card image start -->
+              <img src="img/women2.png" class="card-img-top" alt="wj2" />
+              <!-- single card image end -->
+              <!-- single card content start -->
+              <div class="card-body">
+                <h5 class="card-title">Ladis Jacket</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  nostrum quod fugiat.
+                </p>
+              </div>
+              <!-- single card content end -->
+              <!-- single card footer start -->
+              <div class="card-footer d-flex justify-content-between footer-bg">
+                <h2 class="mt-4 ms-4"><span>$234</span></h2>
+                <button class="btn btn-color px-4 py-3 m-3 text-white">
+                  <i class="fas fa-shopping-cart"></i> BUY NOW
+                </button>
+              </div>
+              <!-- single card footer end -->
+            </div>
+          </div>
+          <!-- single card end -->
+          <!-- single card start -->
+          <div class="col-md-6 col-lg-4 shadow-lg rounded">
+            <div class="card card-margin">
+              <!-- single card image start -->
+              <img src="img/women3.png" class="card-img-top" alt="..." />
+              <!-- single card image end -->
+              <!-- single card content start -->
+              <div class="card-body">
+                <h5 class="card-title">Woman Lather Jacket</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  nostrum quod fugiat.
+                </p>
+              </div>
+              <!-- single card content end -->
+              <!-- single card footer start -->
+              <div class="card-footer d-flex justify-content-between footer-bg">
+                <h2 class="mt-4 ms-4"><span>$234</span></h2>
+                <button class="btn btn-color px-4 py-3 m-3 text-white">
+                  <i class="fas fa-shopping-cart"></i> BUY NOW
+                </button>
+              </div>
+              <!-- single card footer end -->
+            </div>
+          </div>
+          <!-- single card end -->
+        </div>
+      </section>
+      <!-- womens jacket card part end -->
+
+      <!-- man jacket part start -->
+      <section id="man-jacket mt-5">
+        <!-- content start -->
+        <h2 class="mb-5">MAN JACKET</h2>
+        <!-- content end -->
+        <!--  card start -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 h-80 rounded">
+          <!-- single card start -->
+          <div class="col-md-6 col-lg-4 shadow-lg">
+            <div class="card card-margin">
+              <!-- single card image start -->
+              <img src="img/man1.png" class="card-img-top" alt="man1" />
+              <!-- single card image end -->
+              <!-- single card content start -->
+              <div class="card-body">
+                <h5 class="card-title">Snowboard Jacket Mens</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  nostrum quod fugiat.
+                </p>
+              </div>
+              <!-- single card content end -->
+              <!-- single card footer start -->
+              <div class="card-footer d-flex justify-content-between footer-bg">
+                <h2 class="mt-4 ms-4"><span>$234</span></h2>
+                <button class="btn btn-color px-4 py-3 m-3 text-white">
+                  <i class="fas fa-shopping-cart"></i> BUY NOW
+                </button>
+              </div>
+              <!-- single card footer end -->
+            </div>
+          </div>
+          <!-- single card end -->
+
+          <!-- single card start -->
+          <div class="col-md-6 col-lg-4 shadow-lg">
+            <div class="card card-margin">
+              <!-- single card image start -->
+              <img src="img/man2.png" class="card-img-top" alt="man2" />
+              <!-- single card image end -->
+              <!-- single card content start -->
+              <div class="card-body">
+                <h5 class="card-title">Man Leather Jacket</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  nostrum quod fugiat.
+                </p>
+              </div>
+              <!-- single card content end -->
+              <!-- single card footer start -->
+              <div class="card-footer d-flex justify-content-between footer-bg">
+                <h2 class="mt-4 ms-4"><span>$234</span></h2>
+                <button class="btn btn-color px-4 py-3 m-3 text-white">
+                  <i class="fas fa-shopping-cart"></i> BUY NOW
+                </button>
+              </div>
+              <!-- single card footer end -->
+            </div>
+          </div>
+          <!-- single card end -->
+          <!-- single card start -->
+          <div class="col-md-6 col-lg-4 shadow-lg rounded">
+            <div class="card card-margin">
+              <!-- single card image start -->
+              <img src="img/man3.png" class="card-img-top" alt="man3" />
+              <!-- single card image end -->
+              <!-- single card content start -->
+              <div class="card-body">
+                <h5 class="card-title">Man Casual Jacket</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  nostrum quod fugiat.
+                </p>
+              </div>
+              <!-- single card content end -->
+              <!-- single card footer start -->
+              <div class="card-footer d-flex justify-content-between footer-bg">
+                <h2 class="mt-4 ms-4"><span>$234</span></h2>
+                <button class="btn btn-color px-4 py-3 m-3 text-white">
+                  <i class="fas fa-shopping-cart"></i> BUY NOW
+                </button>
+              </div>
+              <!-- single card footer end -->
+            </div>
+          </div>
+          <!-- single card end -->
+        </div>
+      </section>
+      <!-- man jacket part end -->
+
+      <!-- about us part start -->
+      <section id="about-us" class="mt-5">
+        <!-- heading start -->
+        <h2 class="text-center">
+          <span
+            >About Us
+            <hr />
+          </span>
+        </h2>
+        <!-- heading end -->
+        <div class="row">
+          <!-- first coloum start -->
+          <div class="col-md-6 col-sm-order-1">
+            <!-- first part start -->
+            <div class="d-flex mt-3 shadow-lg rounded">
+              <div class="m-4">
+                <img src="img/a1.png" alt="" />
+              </div>
+              <div class="mt-3 p-3">
+                <h6>Find The Perfect Fit</h6>
+                <p>
+                  Everybody is different, which is why we offer styles for every
+                  body.
+                </p>
+              </div>
+            </div>
+            <!-- first part end -->
+
+            <!-- second part start -->
+            <div class="d-flex mt-3 shadow-lg rounded">
+              <div class="m-4">
+                <img src="img/a2.png" alt="" />
+              </div>
+              <div class="mt-3 p-3">
+                <h6>Free Exchanges</h6>
+                <p>One of the many reasons you can shop with peace of mind.</p>
+              </div>
+            </div>
+            <!-- second part end -->
+
+            <!-- third part start -->
+            <div class="d-flex mt-3 shadow-lg rounded">
+              <div class="m-4">
+                <img src="img/a3.png" alt="" />
+              </div>
+              <div class="mt-3 p-3">
+                <h6>Contact Our Seller</h6>
+                <p>
+                  They are here to help you. That's quite literally what we pay
+                  them for.
+                </p>
+              </div>
+            </div>
+            <!-- third part end -->
+          </div>
+          <!-- first coloum end -->
+
+          <!-- second coloum start -->
+          <div class="col-md-6 col-sm-order-0 mt-5">
+            <img class="img-fluid mt-5" src="img/about4.png" alt="" />
+          </div>
+        </div>
+        <!-- second coloum end -->
+      </section>
+      <!-- about us part end -->
+      <!-- contact us part start -->
+
+      <!-- contact us part end -->
     </main>
     <!-- website main part end -->
     <!-- bootstarp js file -->
